@@ -1,0 +1,156 @@
+/* IT-brukerstøtte – Akademiet
+   Delt stilark for alle sider */
+
+:root {
+  --navy: #1B2A4A;
+  --navy-dark: #121F38;
+  --amber: #E8A33D;
+  --bg: #F7F8FA;
+  --text: #22303F;
+  --muted: #5B6B7C;
+  --border: #D8DEE6;
+  --card: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+header.site-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 1.25rem 1.5rem;
+}
+
+header.site-header .brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  margin: 0 0 0.6rem 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+nav a {
+  color: #E7ECF3;
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--navy-dark);
+  outline: none;
+}
+
+nav a.active {
+  background: var(--amber);
+  color: var(--navy-dark);
+  font-weight: 600;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  color: var(--navy);
+  margin-top: 0;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin-top: 2.2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin-top: 1.6rem;
+}
+
+p {
+  max-width: 68ch;
+}
+
+a {
+  color: #1E5FA8;
+}
+
+ul, ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.8rem;
+  text-align: left;
+}
+
+th {
+  background: #EEF1F6;
+  color: var(--navy);
+}
+
+.info-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--amber);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.guide-list a {
+  font-weight: 600;
+}
+
+.guide-list p {
+  margin: 0.15rem 0 0.9rem 0;
+  color: var(--muted);
+}
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
